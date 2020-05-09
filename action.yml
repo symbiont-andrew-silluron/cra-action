@@ -1,0 +1,9 @@
+name: Run CRA Scripts
+description: Run CRA Scripts on CRA generated project
+author: asilluron
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding: 
+  icon: grid
+  color: blue
