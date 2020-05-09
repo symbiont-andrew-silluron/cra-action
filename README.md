@@ -23,6 +23,7 @@ jobs:
 ```
 
 ### With args 
+
 ```
 name: CRA Tests
 
@@ -39,8 +40,10 @@ jobs:
       uses: asilluron/cra-action@0.0.2
       with:
         rsArgs: --env=jest-environment-jsdom-sixteen
+        workingDirectory: ./web
 ```
         
+`workingDirectory` is a special arg that change the working directory of this action
 
 ## License
 

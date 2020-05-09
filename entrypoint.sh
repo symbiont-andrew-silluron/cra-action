@@ -3,6 +3,11 @@
 # Exit if any subcommand fails
 set -e 
 
+# Change working directory (https://github.community/t5/GitHub-Actions/Github-actions-working-directory-incorrectly-documented/td-p/29201), workaround until GitHub actions implements per action directory
+if [ $workingDirectory ]; then
+    cwd $workingDirectory
+
+
 # Setup node modules if needed
 if [ -e node_modules/.bin/jest ]; then
     setup=""
