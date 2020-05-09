@@ -19,7 +19,7 @@ jobs:
     steps:d
     - uses: actions/checkout@v2
     - name: Run CRA Scripts
-      uses: asilluron/cra-action@0.0.1
+      uses: asilluron/cra-action@0.0.2
 ```
 
 ### With args 
@@ -36,7 +36,7 @@ jobs:
     steps:d
     - uses: actions/checkout@v2
     - name: Run CRA Scripts
-      uses: asilluron/cra-action@0.0.1
+      uses: asilluron/cra-action@0.0.2
       with:
         rsArgs: --env=jest-environment-jsdom-sixteen
 ```
