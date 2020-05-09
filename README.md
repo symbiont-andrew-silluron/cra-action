@@ -22,6 +22,26 @@ jobs:
       uses: asilluron/cra-action@0.0.1
 ```
 
+### With args 
+```
+name: CRA Tests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:d
+    - uses: actions/checkout@v2
+    - name: Run CRA Scripts
+      uses: asilluron/cra-action@0.0.1
+      with:
+        rsArgs: --env=jest-environment-jsdom-sixteen
+```
+        
+
 ## License
 
 The Dockerfile and associated scripts and documentation in this project are released under the [MIT License](LICENSE).

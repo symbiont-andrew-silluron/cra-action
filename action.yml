@@ -1,9 +1,15 @@
 name: Run CRA Scripts
 description: Run CRA Scripts on CRA generated project
 author: asilluron
-runs:
+inputs:
+  rsArgs:
+    description: Args to react-scripts
+    required: false
+runs: 
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.rsArgs }}
 branding: 
   icon: grid
   color: blue

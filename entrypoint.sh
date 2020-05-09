@@ -18,4 +18,4 @@ fi
 
 echo "## Running CRA"
 args=$@
-sh -c "$setup ./node_modules/.bin/react-scripts test"
+sh -c "$setup ./node_modules/.bin/react-scripts test $args"
