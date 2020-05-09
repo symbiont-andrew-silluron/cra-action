@@ -4,7 +4,7 @@
 set -e 
 
 # Setup node modules if needed
-if [ -e node_modules/.bin/jest ]; then
+if [ -e web/node_modules/.bin/jest ]; then
     setup=""
 else
     echo "## Installing node_modules..."
@@ -18,4 +18,4 @@ fi
 
 echo "## Running CRA"
 args=$@
-sh -c "$setup ./node_modules/.bin/react-scripts test $args"
+sh -c "$setup ./web/node_modules/.bin/react-scripts test $args"
